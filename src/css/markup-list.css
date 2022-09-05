@@ -1,0 +1,27 @@
+.country-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-list__item {
+  display: inline-flex;
+  margin-right: auto;
+  flex-shrink: 1;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 100ms linear;
+}
+
+.country-list__item:hover {
+  transform: scale(1.03);
+}
+
+.country-list__name {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.country-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
